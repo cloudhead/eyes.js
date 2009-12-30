@@ -19,8 +19,9 @@ var eyes = {
 
     // Return a curried inspect() function, with the `options` argument filled in.
     inspector: function (options) {
+        var that = this;
         return function (obj, label, opts) {
-            return this.inspect(obj, label,
+            return that.inspect(obj, label,
                 process.mixin({}, options || {}, opts || {}));
         };
     },
@@ -105,7 +106,7 @@ var eyes = {
 };
 
 // CommonJS module support
-exports = eyes;
+process.mixin(exports, eyes);
 
 // A better `typeof`
 function typeOf(value) {
