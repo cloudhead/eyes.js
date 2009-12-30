@@ -3,7 +3,7 @@
 //
 //   usage:
 //
-//       var inspect = require('eyes').inspector({style: 'magenta'});
+//       var inspect = require('eyes').inspector({styles: {all: 'magenta'}});
 //
 //       inspect(something); // inspect with the settings passed to `inspector`
 //
