@@ -110,11 +110,13 @@ var eyes = {
             'yellow'    : [33, 39],
             'green'     : [32, 39],
             'red'       : [31, 39]
-        };
+        }, endCode;
 
-        if (style) {
-            return '\033[' + styles[style][0] + 'm' + str +
-                   '\033[' + styles[style][1] + 'm';
+        if (style && codes[style]) {
+            endCode = (codes[style][1] === 39 && styles.all) ? codes[styles.all][0] 
+                                                             : codes[style][1];
+            return '\033[' + codes[style][0] + 'm' + str +
+                   '\033[' + endCode + 'm';
         } else { return str }
     }
 };
