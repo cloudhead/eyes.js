@@ -40,6 +40,7 @@ These are the default styles and settings used by _eyes_.
         special: '',         // null, undefined...
         bool: ''             // true & false
     },
+    maxLength: 2048,         // Truncate output if longer than this
     writer: process.stdio.write
 
 You can overwrite them with your own, by passing a similar object to `inspector()` or `inspect()`.
@@ -48,6 +49,7 @@ You can overwrite them with your own, by passing a similar object to `inspector(
         styles: {
             all: 'magenta',
             special: 'bold'
-        }
+        },
+        maxLength: 512
     });
 
