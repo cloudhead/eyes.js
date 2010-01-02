@@ -11,6 +11,7 @@ I was tired of looking at cluttered output in the console -- something needed to
 So I decided to have some fun. _eyes_ were born.
 
 ![eyes-ss](http://dl.dropbox.com/u/251849/eyes-js-ss.gif)
+
 _example of the output of a user-customized eyes.js inspector_
 
 usage
