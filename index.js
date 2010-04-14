@@ -1,2 +1,4 @@
-exports.inspector = require('./lib/eyes').inspector;
-exports.inspect   = require('./lib/eyes').inspect;
+var eyes = require('./lib/eyes');
+
+for (var i in eyes) exports[i] = eyes[i];
+
