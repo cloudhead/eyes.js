@@ -1,4 +1,4 @@
-Eyes
+eyes
 ====
 
 a customizable value inspector for Node.js
@@ -13,6 +13,8 @@ So I decided to have some fun. _eyes_ were born.
 ![eyes-ss](http://dl.dropbox.com/u/251849/eyes-js-ss.gif)
 
 _example of the output of a user-customized eyes.js inspector_
+
+*eyes* also deals with circular objects in an intelligent way, and can pretty-print object literals.
 
 usage
 -----
@@ -43,9 +45,10 @@ customization
 These are the default styles and settings used by _eyes_.
     styles: {                 // Styles applied to stdout
         all:     'cyan',      // Overall style applied to everything
-        label:   'underline', // Inspection labels, like 'array' in `array: [1,
-        other:   'inverted',  // Objects which don't have a literal representat
-        key:     'bold',      // The keys in object literals, like 'a' in `{a: 
+        label:   'underline', // Inspection labels, like 'array' in `array: [1, 2, 3]`
+        other:   'inverted',  // Objects which don't have a literal representation, such as functions
+        key:     'bold',      // The keys in object literals, like 'a' in `{a: 1}`
+
         special: 'grey',      // null, undefined...
         string:  'green',
         number:  'magenta',
