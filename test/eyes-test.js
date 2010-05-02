@@ -23,6 +23,12 @@ eyes.inspect({
     date: new(Date)
 }, "wrapped types");
 
+var obj = {};
+obj.that = { self: obj };
+obj.self = obj;
+
+eyes.inspect(obj, "Circular object");
+
 var inspect = eyes.inspector({ writer: false });
 
 sys.puts(inspect('something', "something"));
