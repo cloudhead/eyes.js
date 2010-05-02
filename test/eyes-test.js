@@ -29,7 +29,7 @@ obj.self = obj;
 
 eyes.inspect(obj, "Circular object");
 
-var inspect = eyes.inspector({ writer: false });
+var inspect = eyes.inspector({ stream: null });
 
 sys.puts(inspect('something', "something"));
 sys.puts(inspect("something else"));
