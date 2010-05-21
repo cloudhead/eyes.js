@@ -27,7 +27,7 @@ var obj = {};
 obj.that = { self: obj };
 obj.self = obj;
 
-eyes.inspect(obj, "Circular object");
+eyes.inspect(obj, "circular object");
 
 var inspect = eyes.inspector({ stream: null });
 
