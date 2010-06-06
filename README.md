@@ -54,7 +54,6 @@ These are the default styles and settings used by _eyes_.
         number:  'magenta',
         bool:    'blue',      // true false
         regexp:  'green',     // /\d+/
-        array:   ''           // [] (brackets part)
     },
     pretty: true,             // Indent object literals
     hideFunctions: false,     // Don't output functions at all
