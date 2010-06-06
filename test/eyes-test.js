@@ -29,6 +29,7 @@ obj.self = obj;
 
 eyes.inspect(obj, "circular object");
 eyes.inspect({hello: 'moto'}, "small object");
+eyes.inspect({hello: new(Array)(6) }, "big object");
 eyes.inspect(["hello 'world'", 'hello "world"'], "quotes");
 
 var inspect = eyes.inspector({ stream: null });
