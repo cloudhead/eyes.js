@@ -31,6 +31,21 @@ eyes.inspect(obj, "circular object");
 eyes.inspect({hello: 'moto'}, "small object");
 eyes.inspect({hello: new(Array)(6) }, "big object");
 eyes.inspect(["hello 'world'", 'hello "world"'], "quotes");
+eyes.inspect({
+    recommendations: [{
+        id: 'a7a6576c2c822c8e2bd81a27e41437d8',
+        key: [ 'spree', 3.764316258020699 ],
+        value: {
+            _id: 'a7a6576c2c822c8e2bd81a27e41437d8',
+            _rev: '1-2e2d2f7fd858c4a5984bcf809d22ed98',
+            type: 'domain',
+            domain: 'spree',
+            weight: 3.764316258020699,
+            product_id: 30
+        }
+    }]
+}, 'complex');
+
 
 var inspect = eyes.inspector({ stream: null });
 
