@@ -8,7 +8,7 @@
   "licenses"      : ["MIT"],
   "dependencies"  : [],
   "main"          : "./lib/eyes",
-  "version"       : "0.1.5",
+  "version"       : "0.1.6",
   "directories"   : { "lib": "./lib", "test": "./test" },
   "engines"       : { "node": "> 0.1.90" }
 }
