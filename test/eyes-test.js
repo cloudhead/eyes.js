@@ -46,6 +46,7 @@ eyes.inspect({
     }]
 }, 'complex');
 
+eyes.inspect([null], "null in array");
 
 var inspect = eyes.inspector({ stream: null });
 
