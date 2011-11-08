@@ -1,4 +1,4 @@
-var sys = require('sys');
+var util = require('util');
 var eyes = require('../lib/eyes');
 
 eyes.inspect({
@@ -50,7 +50,7 @@ eyes.inspect([null], "null in array");
 
 var inspect = eyes.inspector({ stream: null });
 
-sys.puts(inspect('something', "something"));
-sys.puts(inspect("something else"));
+util.puts(inspect('something', "something"));
+util.puts(inspect("something else"));
 
-sys.puts(inspect(["no color"], null, { styles: false }));
+util.puts(inspect(["no color"], null, { styles: false }));
