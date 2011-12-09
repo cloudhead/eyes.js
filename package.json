@@ -9,6 +9,7 @@
   "dependencies"  : [],
   "main"          : "./lib/eyes",
   "version"       : "0.1.6",
+  "scripts"       : { "test": "node test/*-test.js" },
   "directories"   : { "lib": "./lib", "test": "./test" },
   "engines"       : { "node": "> 0.1.90" }
 }
