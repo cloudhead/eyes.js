@@ -7,7 +7,7 @@
   "contributors"  : [{ "name": "Charlie Robbins", "email": "charlie@nodejitsu.com" }],
   "licenses"      : ["MIT"],
   "main"          : "./lib/eyes",
-  "version"       : "0.1.7",
+  "version"       : "0.1.8",
   "scripts"       : { "test": "node test/*-test.js" },
   "directories"   : { "lib": "./lib", "test": "./test" },
   "engines"       : { "node": "> 0.1.90" }
