@@ -6,7 +6,6 @@
   "author"        : "Alexis Sellier <self@cloudhead.net>",
   "contributors"  : [{ "name": "Charlie Robbins", "email": "charlie@nodejitsu.com" }],
   "licenses"      : ["MIT"],
-  "dependencies"  : [],
   "main"          : "./lib/eyes",
   "version"       : "0.1.7",
   "scripts"       : { "test": "node test/*-test.js" },
