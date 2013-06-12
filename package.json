@@ -2,6 +2,7 @@
   "name"          : "eyes",
   "description"   : "a customizable value inspector",
   "url"           : "http://github.com/cloudhead/eyes.js",
+  "repository"    : { "type": "git", "url": "https://github.com/cloudhead/eyes.js.git" },
   "keywords"      : ["inspector", "debug", "inspect", "print"],
   "author"        : "Alexis Sellier <self@cloudhead.net>",
   "contributors"  : [{ "name": "Charlie Robbins", "email": "charlie@nodejitsu.com" }],
